@@ -1,15 +1,19 @@
 'use strict'
 // document.getElementById("count-el").innerText = 5
 
-let lapsCompleted = 0
+let countEl = document.getElementById("count-el")
 
-function sum() {
-    lapsCompleted = lapsCompleted + 1
+console.log(countEl)
+
+let count = 0
+
+function increment() {
+    console.log("clicked")
+    count = count + 1
+    console.log(count)
+    countEl.innerText = count
 }
-sum()
-sum()
-sum() // Renaming to Increment would've helped me notice what was going on!
-console.log(lapsCompleted)
+increment()
 
 
 
