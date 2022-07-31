@@ -6,17 +6,21 @@ let count = 0
 
 function increment() {
     count += 1
-    countEl.innerText = count
+    countEl.textContent = count
 }
-increment()
+
 
 let saveEl = document.getElementById("save-el")
 
 function save() {
-    let countStr = count + "--"
-    saveEl.innerText += countStr // Got stuck on this for 15 minutes. .innertext =/= .innerText....
+    let countStr = count + "-"
+    saveEl.textContent += countStr // Got stuck on this for 15 minutes. .innertext =/= .innerText...
+    count = 0
+    countEl.textContent = count
 }
-save()
+
+
+
 // let username = "Bilal"
 // let message = "You have three new notifications"
 // let messageToUser = message + ", " + username + "!"
